@@ -1,0 +1,105 @@
+
+.spinner {
+  border: 2px solid transparent;
+  border-top: 2px solid currentColor;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.copy-btn {
+  position: relative;
+}
+
+.copy-btn .copied {
+  display: none;
+  position: absolute;
+  top: -25px;
+  right: 0;
+  background-color: #4caf50;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 12px;
+}
+
+.copy-btn.copied .copied {
+  display: block;
+}
+
+/* static/styles.css */
+/* static/styles.css */
+/* static/styles.css */
+
+.typing-animation {
+    display: inline-block;
+    color: #3498db; /* Change this to your desired text color */
+    border-right: 0.15em solid; /* Caret effect */
+    animation: blink-caret 0.75s step-end infinite;
+  }
+  
+  @keyframes blink-caret {
+    from, to {
+      border-color: transparent;
+    }
+    50% {
+      border-color: #3498db; /* Change this to match your text color */
+    }
+  }
+  
+  /* Keyframes for the typing effect */
+  @keyframes typing {
+    0% {
+      width: 0; /* Start with no text */
+    }
+    50% {
+      width: 40%; /* Show full text */
+    }
+    100% {
+      width: 0; /* Return to no text */
+    }
+  }
+  
+  /* Create a container for the typing effect */
+  .typing-container {
+    overflow: hidden; /* Hide overflowing text */
+    white-space: nowrap; /* Prevent wrapping */
+    animation: typing 6s steps(30, end) infinite; /* Slow typing effect */
+  }
+
+
+  /* static/styles.css */
+
+/* Common styles */
+body {
+  transition: background-color 0.5s, color 0.5s; /* Smooth transition */
+}
+
+/* Light mode styles */
+body.light-mode {
+  background-color: #ffffff; /* Light background */
+  color: #000000; /* Dark text */
+}
+
+/* Dark mode styles */
+body.dark-mode {
+  background-color: #333333; /* Dark background */
+  color: #ffffff; /* Light text */
+}
+
+/* Previous styles remain unchanged */
+.typing-animation {
+  display: inline-block;
+  color: #3498db; /* Text color */
+  border-right: 0.15em solid; /* Caret effect */
+  animation: blink-caret 0.75s step-end infinite;
+}
+
+/* Other styles remain unchanged */
